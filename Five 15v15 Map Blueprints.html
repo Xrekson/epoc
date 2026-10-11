@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Five 15v15 Map Blueprints</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#eaf1f6;--ink:#12304a;--line:#2b5a82;--wall:#c9dbe8;--a:#2f8cff;--b:#ff7a29;--obj:#e8a800;--water:#d3e6f5;--card:#f6fafd;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d2033;--ink:#d6e8f5;--line:#6fa6d1;--wall:#173a57;--a:#4aa3ff;--b:#ff8a3d;--obj:#ffd84a;--water:#12304a;--card:#12283d}}
+:root[data-theme="dark"]{--bg:#0d2033;--ink:#d6e8f5;--line:#6fa6d1;--wall:#173a57;--a:#4aa3ff;--b:#ff8a3d;--obj:#ffd84a;--water:#12304a;--card:#12283d}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "IBM Plex Sans",system-ui,sans-serif;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:32px 32px;background-blend-mode:soft-light}
+main{max-width:980px;margin:0 auto;padding:32px 18px 56px}
+h1{font:700 clamp(2.2rem,6vw,3.6rem)/1 "Barlow Condensed",sans-serif;margin:0 0 8px}
+h2{font:700 1.9rem/1.1 "Barlow Condensed",sans-serif;margin:0}
+.lead{max-width:62ch;margin:0 0 18px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.85rem;margin-bottom:28px}
+.legend i{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:-1px;border:1.5px solid var(--ink)}
+article{background:var(--card);border:1.5px solid var(--line);padding:18px;margin-bottom:28px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px}
+@media(max-width:760px){article{grid-template-columns:1fr}}
+.mode{font-size:.9rem;margin:2px 0 10px;color:var(--line);font-weight:500}
+svg{width:100%;height:auto;display:block;border:1.5px solid var(--line);background:var(--bg)}
+svg .w{fill:var(--wall);stroke:var(--ink);stroke-width:1.2}
+svg .a{fill:var(--a);fill-opacity:.35;stroke:var(--a);stroke-width:1.5}
+svg .b{fill:var(--b);fill-opacity:.35;stroke:var(--b);stroke-width:1.5}
+svg .o{fill:var(--obj);stroke:var(--ink);stroke-width:1.2}
+svg .r{fill:none;stroke:var(--ink);stroke-width:1.2;stroke-dasharray:4 3;opacity:.7}
+svg .f{fill:var(--water)}
+svg text{font:600 8px "IBM Plex Sans",sans-serif;fill:var(--ink);text-anchor:middle}
+.cap{font-size:.85rem;margin:8px 0 0}
+dl{margin:0}dt{font-weight:500;margin-top:10px}dd{margin:0;font-size:.94rem}
+.rules{background:var(--card);border:1.5px solid var(--line);padding:18px}
+.rules ul{margin:8px 0 0;padding-left:20px}
+</style></head><body><main>
+<h1>Five 15v15 map blueprints</h1>
+<p class="lead">At 30 players a map needs more routes, more cover density and more spawn buffer than a 6v6 map. Every layout below offers at least three lanes, a loud central fight and quiet flanks, so no squad gets trapped. Each plan is drawn to scale, with a meter grid and a scale bar.</p>
+<div class="legend"><span><i style="background:var(--a)"></i>Team A spawn</span><span><i style="background:var(--b)"></i>Team B spawn</span><span><i style="background:var(--obj)"></i>Objective</span><span>Dashed line: main route</span></div>
+
+<article><div>
+<svg viewBox="0 0 300 180" data-s="1.5" data-g="50" data-b="100" data-p="l" role="img" aria-label="Foundry layout"><rect class="a" x="6" y="66" width="30" height="48"/><rect class="b" x="264" y="66" width="30" height="48"/><rect class="w" x="118" y="62" width="64" height="56"/><rect class="w" x="70" y="14" width="52" height="34"/><rect class="w" x="178" y="14" width="52" height="34"/><rect class="w" x="70" y="132" width="52" height="34"/><rect class="w" x="178" y="132" width="52" height="34"/><rect class="w" x="48" y="76" width="22" height="28"/><rect class="w" x="230" y="76" width="22" height="28"/><polyline class="r" points="36,80 56,56 244,56 264,80"/><polyline class="r" points="36,100 56,124 244,124 264,100"/><polyline class="r" points="36,90 118,90 182,90 264,90"/><circle class="o" cx="150" cy="31" r="7"/><circle class="o" cx="150" cy="90" r="7"/><circle class="o" cx="150" cy="149" r="7"/><text x="150" y="34">A</text><text x="150" y="93">B</text><text x="150" y="152">C</text></svg></div>
+<div><h2>Foundry</h2><p class="mode">Domination, 3 flags, mirrored</p>
+<dl><dt>Setting</dt><dd>A steel mill. Cranes, ore hoppers and a roofed casting hall in the middle.</dd>
+<dt>Flow</dt><dd>North and south lanes are long, open-cover yards with flag A and C. The center hall holds B and has four doors plus a catwalk, so it is the meat grinder.</dd>
+<dt>Power spots</dt><dd>Crane cabs overlook both outer flags. They are reached by one ladder each, which gives snipers a risk.</dd>
+<dt>Why 15v15</dt><dd>Three flags let each team split 5/5/5 or stack one lane. Flanking tunnels under the hall stop a stack from being a lock.</dd></dl></div></article>
+
+<article><div>
+<svg viewBox="0 0 300 180" data-s="1.25" data-g="50" data-b="100" data-p="l" role="img" aria-label="Dockside Cutoff layout"><rect class="f" x="0" y="138" width="300" height="42"/><rect class="b" x="100" y="4" width="100" height="18"/><rect class="a" x="110" y="150" width="80" height="24"/><rect class="w" x="110" y="32" width="80" height="28"/><rect class="w" x="30" y="40" width="50" height="12"/><rect class="w" x="30" y="60" width="50" height="12"/><rect class="w" x="220" y="40" width="50" height="12"/><rect class="w" x="220" y="60" width="50" height="12"/><rect class="w" x="100" y="72" width="40" height="10"/><rect class="w" x="160" y="72" width="40" height="10"/><rect class="w" x="60" y="100" width="60" height="10"/><rect class="w" x="180" y="100" width="60" height="10"/><polyline class="r" points="110,150 40,130 16,90 16,30 100,14"/><polyline class="r" points="190,150 260,130 284,90 284,30 200,14"/><polyline class="r" points="150,138 150,60"/><circle class="o" cx="150" cy="122" r="7"/><circle class="o" cx="150" cy="46" r="7"/><text x="150" y="125">1</text><text x="150" y="49">2</text></svg></div>
+<div><h2>Dockside Cutoff</h2><p class="mode">Attack and defend, 2 sequential objectives</p>
+<dl><dt>Setting</dt><dd>A night container port. Attackers land from boats, defenders hold the warehouse vault.</dd>
+<dt>Flow</dt><dd>Objective 1 is the pier crane control, close to the landing so the first push is fast. Objective 2 is the vault, reached through two flank roads or a narrow center alley.</dd>
+<dt>Power spots</dt><dd>Stacked containers form defender high ground. Attackers can open shortcuts by blowing a container door.</dd>
+<dt>Why 15v15</dt><dd>Two flanks and a center alley force the defense to split. A fallback to the vault gives them a second chance after losing the pier.</dd></dl></div></article>
+
+<article><div>
+<svg viewBox="0 0 300 180" data-s="1.2" data-g="50" data-b="100" data-p="l" role="img" aria-label="Highrise Atlas layout"><rect class="a" x="4" y="4" width="26" height="26"/><rect class="b" x="270" y="150" width="26" height="26"/><rect class="w" x="40" y="20" width="50" height="30"/><rect class="w" x="125" y="20" width="50" height="30"/><rect class="w" x="210" y="20" width="50" height="30"/><rect class="w" x="40" y="75" width="50" height="30"/><rect class="w" x="125" y="75" width="50" height="30"/><rect class="w" x="210" y="75" width="50" height="30"/><rect class="w" x="40" y="130" width="50" height="30"/><rect class="w" x="125" y="130" width="50" height="30"/><rect class="w" x="210" y="130" width="50" height="30"/><polyline class="r" points="90,35 125,35"/><polyline class="r" points="175,35 210,35"/><polyline class="r" points="90,145 125,145"/><polyline class="r" points="175,145 210,145"/><polyline class="r" points="30,17 40,35"/><polyline class="r" points="260,145 270,160"/><circle class="o" cx="107" cy="62" r="7"/><circle class="o" cx="192" cy="62" r="7"/><circle class="o" cx="150" cy="90" r="7"/><circle class="o" cx="107" cy="117" r="7"/><circle class="o" cx="192" cy="117" r="7"/><text x="107" y="65">1</text><text x="192" y="65">2</text><text x="150" y="93">3</text><text x="107" y="120">4</text><text x="192" y="120">5</text></svg></div>
+<div><h2>Highrise Atlas</h2><p class="mode">Hardpoint, rotating zone, diagonal spawns</p>
+<dl><dt>Setting</dt><dd>A financial district with nine towers, street canyons and skybridges.</dd>
+<dt>Flow</dt><dd>The hardpoint rotates through five intersections, always ending near the center tower. Teams spawn on opposite corners, so every rotation is a fresh fight.</dd>
+<dt>Power spots</dt><dd>Skybridges give a fast cross-map route and a clear target. The center tower roof covers point 3 but is exposed on all sides.</dd>
+<dt>Why 15v15</dt><dd>The zone is wide enough to hold with 10 players while 5 flank through the towers. Interior stairwells keep vertical fights from becoming a dead end.</dd></dl></div></article>
+
+<article><div>
+<svg viewBox="0 0 300 180" data-s="3" data-g="100" data-b="200" data-p="l" role="img" aria-label="Salt Flats Outpost layout"><rect class="a" x="6" y="60" width="34" height="60"/><rect class="b" x="260" y="60" width="34" height="60"/><rect class="w" x="125" y="70" width="50" height="40" rx="8"/><rect class="w" x="70" y="0" width="160" height="26"/><rect class="w" x="70" y="154" width="160" height="26"/><rect class="w" x="82" y="44" width="16" height="16"/><rect class="w" x="202" y="44" width="16" height="16"/><rect class="w" x="82" y="120" width="16" height="16"/><rect class="w" x="202" y="120" width="16" height="16"/><polyline class="r" points="40,70 100,38 200,38 260,70"/><polyline class="r" points="40,110 100,142 200,142 260,110"/><polyline class="r" points="40,90 125,90"/><polyline class="r" points="175,90 260,90"/><circle class="o" cx="28" cy="90" r="7"/><circle class="o" cx="272" cy="90" r="7"/><text x="150" y="93">Mesa</text></svg></div>
+<div><h2>Salt Flats Outpost</h2><p class="mode">Capture the flag with vehicles</p>
+<dl><dt>Setting</dt><dd>A desert salt flat with two outposts, a central mesa and canyon walls on the north and south edges.</dd>
+<dt>Flow</dt><dd>Open ground in the middle favors buggies and long-range rifles. Narrow canyon routes along the edges favor close combat and flag runners.</dd>
+<dt>Power spots</dt><dd>The mesa has two ramps and a cave under it. Holding the top covers both lanes but cuts you off from your base.</dd>
+<dt>Why 15v15</dt><dd>It is the biggest map of the set, so each team can field 4 vehicles and still have 9 or more on foot. Spread-out cover prevents the flag from camping.</dd></dl></div></article>
+
+<article><div>
+<svg viewBox="0 0 300 180" data-s="1.25" data-g="50" data-b="100" data-p="r" role="img" aria-label="Monastery Ridge layout"><rect class="a" x="4" y="148" width="40" height="28"/><rect class="b" x="256" y="4" width="40" height="28"/><rect class="w" x="190" y="40" width="60" height="40"/><rect class="w" x="130" y="104" width="50" height="16"/><rect class="w" x="240" y="100" width="50" height="50"/><rect class="w" x="70" y="100" width="30" height="8"/><rect class="w" x="150" y="70" width="40" height="8"/><polyline class="r" points="24,148 24,120 120,120 120,92 60,92 60,64 200,64 200,36 256,24"/><polyline class="r" points="44,160 150,160 230,160 230,100"/><circle class="o" cx="155" cy="112" r="7"/><circle class="o" cx="220" cy="60" r="7"/><text x="155" y="115">1</text><text x="220" y="63">2</text></svg></div>
+<div><h2>Monastery Ridge</h2><p class="mode">Attack and defend, uphill, asymmetric</p>
+<dl><dt>Setting</dt><dd>A mountain monastery. A switchback road climbs from the valley to a bell tower.</dd>
+<dt>Flow</dt><dd>Attackers take the gatehouse first, then the bell tower. The road is the safe, slow route. A goat trail along the cliff is fast but exposed, so it is a high-risk flank.</dd>
+<dt>Power spots</dt><dd>Defenders hold terraces above every switchback. Attackers get smoke cover from the roadside ruins.</dd>
+<dt>Why 15v15</dt><dd>Terraces give defenders layered fallback positions. Fifteen attackers can pressure the road and the cliff trail at the same time.</dd></dl></div></article>
+
+<section class="rules"><h2>Shared design rules</h2><ul>
+<li>Respawn to first contact: 20 to 30 seconds on foot.</li>
+<li>No lane wider than one sightline for a sniper, and no lane without at least two cover pieces per 15 meters.</li>
+<li>Every objective has three approaches and one blind-side entrance.</li>
+<li>Spawn zones are shielded from the objective by a building or terrain so nobody gets spawn-trapped.</li>
+</ul></section>
+</main>
+<script>
+document.querySelectorAll('svg[data-s]').forEach(function(s){
+ var k=+s.dataset.s,g=+s.dataset.g,b=+s.dataset.b,N='http://www.w3.org/2000/svg';
+ function el(n,a,p){var e=document.createElementNS(N,n);for(var i in a)e.setAttribute(i,a[i]);(p||s).appendChild(e);return e}
+ var grid=document.createElementNS(N,'g');s.insertBefore(grid,s.firstChild);
+ var st=g/k,ln={stroke:'var(--line)','stroke-opacity':.25,'stroke-width':.5};
+ for(var x=st;x<299;x+=st)el('line',Object.assign({x1:x,y1:0,x2:x,y2:180},ln),grid);
+ for(var y=st;y<179;y+=st)el('line',Object.assign({x1:0,y1:y,x2:300,y2:y},ln),grid);
+ var L=b/k,x0=s.dataset.p==='r'?294-L:6,y0=172;
+ el('rect',{x:x0-4,y:y0-12,width:L+8,height:20,fill:'var(--bg)','fill-opacity':.9});
+ el('path',{d:'M'+x0+' '+(y0-3)+'V'+y0+'H'+(x0+L)+'V'+(y0-3)+'M'+(x0+L/2)+' '+(y0-2)+'V'+y0,fill:'none',stroke:'var(--ink)','stroke-width':1.2});
+ var t=el('text',{x:x0+L/2,y:y0-5});t.textContent=b+' m';
+ var c=document.createElement('p');c.className='cap';
+ c.textContent='Footprint '+Math.round(300*k)+' \u00d7 '+Math.round(180*k)+' m. Grid squares are '+g+' m.';
+ s.after(c);
+});
+</script>
+</body></html>
